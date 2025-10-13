@@ -1,4 +1,4 @@
-
+/* pagina principal */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -7,7 +7,7 @@ body {
 }
 
 
-.header {
+.encabezado1 {
  display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,20 +26,20 @@ body {
   object-fit: contain;
   padding-left: 20px;
 }
-.title h1{
+.titulo1 h1{
  display: flex;
  font-size: 4rem;
  font-family: 'Playfair Display', serif;
  color: #ffffff;               
  text-align: center;
 }
-.search-bar {
+.buscador {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.search-bar input {
+.buscador input {
   padding: 8px 12px;
   border-radius: 20px;
   border: none;
@@ -47,29 +47,29 @@ body {
   width: 250px;
 }
 
-.search-btn {
+.botonbuscar {
   background: none;    
   border: none;         
   padding: 0;           
   cursor: pointer;    
 }
 
-.search-btn img {
+.botonbuscar img {
   width: 30px;          
   height: 30px;
   object-fit: contain;  
   display: block;       
 }
-.search-btn img:hover {
+.botonbuscar img:hover {
   transform: scale(1.1); 
   transition: transform 0.2s;
 }
 
-.nav-menu {
+.menu {
   background-color: #222;
 }
 
-.nav-menu ul {
+.menu ul {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -79,7 +79,7 @@ body {
    font-family: 'Poppins', sans-serif
 }
 
-.nav-menu a {
+.menu a {
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -87,23 +87,157 @@ body {
   transition: color 0.3s;
 }
 
-.nav-menu a:hover {
+.menu a:hover {
   color: #a7a589;
 }
 
 
-.hero {
+.bienvenida {
   text-align: center;
   padding: 80px 20px;
   background: linear-gradient(to bottom, #f5f5f5, #fff);
 }
 
-.hero h2 {
+.bienvenida h2 {
   font-size: 2.2rem;
   margin-bottom: 10px;
 }
 
-.hero p {
+.bienvenida p {
   font-size: 1.1rem;
   color: #555;
 }
+
+
+/* apartado de lanzamientos */
+
+
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-principal {
+    display: flex;
+    padding: 40px 60px;
+    max-width: 1400px;
+    margin: auto;
+    gap: 40px;
+}
+
+.barra-lateral {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.barra-lateral h3,
+.barra-lateral h4 {
+    margin-bottom: 15px;
+    color: #cc0000;
+    font-size: 1.2em;
+}
+
+.filtro {
+    margin-bottom: 25px;
+}
+
+.lista-estilos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-estilos li {
+    margin-bottom: 12px;
+}
+
+.lista-estilos li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.lista-estilos li a:hover {
+    color: #cc0000;
+}
+
+.contenido-principal {
+    flex: 1;
+}
+
+.encabezado-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px; 
+
+}
+
+.encabezado-seccion h2 {
+    font-size: 2em;
+    color: #111;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.ordenar {
+    padding: 6px 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta-producto {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-producto img {
+    max-width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta-producto h3 {
+    margin: 12px 0 8px;
+    font-size: 1.1em;
+    color: #111;
+}
+
+.precio {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+
+
+
+
