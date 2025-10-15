@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CDs | Groove Town</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="encabezado1">
+  <div class="logo">
+    <img src="imagenes/logo groove town.png" alt="Groove Town Logo">
+  </div>
+  <div class="titulo1">
+    <h1>Groove Town</h1>
+  </div>
+  <div class="buscador">
+    <input type="text" placeholder="Buscar discos, artistas o géneros...">
+    <button class="botonbuscar"><img src="imagenes/lupa.png" alt="Buscar" class="search-icon"></button>
+  </div>
+</header>
+
+<nav class="menu">
+  <ul>
+    <li><a href="lanzamientos.html">Lanzamientos</a></li>
+    <li><a href="cd.html">CD</a></li>
+    <li><a href="vinilos.html">Vinilos</a></li>
+    <li><a href="#">Mercancía</a></li>
+    <li><a href="#">Estilos</a></li>
+  </ul>
+</nav>
+
+<div class="contenedor-principal">
+
+  
+  <aside class="barra-lateral">
+    <h3>Filtrar por</h3>
+
+    
+    <div class="filtro">
+      <label for="busqueda">Buscar</label>
+      <div class="busqueda">
+        <input type="text" id="busqueda" placeholder="Buscar artistas ...">
+        <button class="botonbuscar"><img src="imagenes/lupa.png" alt="Buscar" class="search-icon"></button>
+      </div>
+    </div>
+
+    <div class="filtro">
+      <label>Precio (Bs)</label>
+      <div class="precio-rango">
+        <input type="number" id="min-precio" placeholder="Mín" min="0">
+        <span>-</span>
+        <input type="number" id="max-precio" placeholder="Máx" min="0">
+      </div>
+    </div>
+
+  
+    <div class="filtro">
+      <h4>Estilos</h4>
+      <ul class="lista-estilos">
+        <li><a href="#">Rock</a></li>
+        <li><a href="#">Jazz</a></li>
+        <li><a href="#">Electrónica</a></li>
+        <li><a href="#">Hip-Hop</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  
+  <main class="contenido-principal">
+    <div class="encabezado-seccion">
+      <h2>Próximos lanzamientos</h2>
+      <select class="ordenar">
+        <option value="nuevo">Nuevos productos primero</option>
+        <option value="precio">Precio más bajo</option>
+      </select>
+    </div>
+
+    <div class="productos">
+      <div class="tarjeta-producto">
+       <img src="imagenes/cds/astroworld.png" alt="Álbum Travis Scott">
+       <h3>Astroworld</h3>
+       <p class="artista">Travis Scott</p>
+       <p class="fecha">Lanzado: Agosto 3, 2018</p>
+       <p class="precio">0 Bs</p>
+       <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/Certified Lover Boy.png" alt="Álbum Drake">
+      <h3>Certified Lover Boy</h3>
+      <p class="artista">Drake</p>
+      <p class="fecha">Lanzado: Septiembre 3, 2021</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/After Hours.jpg" alt="The Weeknd">
+      <h3>After Hours</h3>
+      <p class="artista">The Weeknd</p>
+      <p class="fecha">Lanzado: Marzo 20, 2020</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/Case Study 01.png" alt="Álbum Daniel Caesar">
+      <h3>Case Study 01</h3>
+      <p class="artista">Daniel Caesar</p>
+      <p class="fecha">Lanzado: Septiembre 20, 2019</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/Planet Her.png" alt="Álbum Doja Cat">
+      <h3>Planet Her</h3>
+      <p class="artista">Doja Cat</p>
+      <p class="fecha">Lanzado: Junio 25, 2021</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/Future Nostalgia.png" alt="Álbum Dua Lipa">
+      <h3>Future Nostalgia</h3>
+      <p class="artista">Dua Lipa</p>
+      <p class="fecha">Lanzado: Marzo 27, 2020</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/Issues.png" alt="Álbum Korn">
+      <h3>Issues</h3>
+      <p class="artista">Korn</p>
+      <p class="fecha">Lanzado: Noviembre 16, 1999</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/exodo.jpg" alt="Álbum Peso Pluma">
+      <h3>ÉXODO</h3>
+      <p class="artista">Peso Pluma</p>
+      <p class="fecha">Lanzado: Junio 20, 2024</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/White Pony.jpg" alt="Álbum Deftones">
+      <h3>White Pony</h3>
+      <p class="artista">Deftones</p>
+      <p class="fecha">Lanzado: Junio 20, 2000</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/X 100PRE.png" alt="Álbum Bad Bunny">
+      <h3>X 100PRE</h3>
+      <p class="artista">Bad Bunny</p>
+      <p class="fecha">Lanzado: Diciembre 24, 2018</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/Signos.png" alt="Álbum Soda Stereo">
+      <h3>Signos</h3>
+      <p class="artista">Soda Stereo</p>
+      <p class="fecha">Lanzado: Noviembre 10, 1986</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/El Silencio.jpg" alt="Álbum Caifanes">
+      <h3>El Silencio</h3>
+      <p class="artista">Caifanes</p>
+      <p class="fecha">Lanzado: Julio 14, 1992</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/cds/Afrodisíaco.png" alt="Álbum Rauw Alejandro">
+      <h3>Afrodisíaco</h3>
+      <p class="artista">Rauw Alejandro</p>
+      <p class="fecha">Lanzado: Noviembre 13, 2020</p>
+      <p class="precio">0 Bs</p>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+
+    </div>
+  </main>
+</div>
+</body>
+<script src="funciones.js"></script>
+</html>

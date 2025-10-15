@@ -18,6 +18,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  text-align: center;
 }
 
 .logo img {
@@ -109,9 +110,141 @@ body {
 }
 
 
-/* apartado de lanzamientos */
+/* apartado de lanzamientos,vinilos y cds */
 
 
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 50px;
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.barra-lateral {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: fit-content;
+}
+
+.barra-lateral h3 {
+  margin-bottom: 5px;
+  color: #a19f7f;
+  font-size: 1.3em;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 8px;
+}
+
+.filtro label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.filtro select,
+.filtro input[type="text"],
+.filtro input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.busqueda {
+  display: flex;
+  gap: 8px;
+}
+
+.busqueda input {
+  flex: 1;
+}
+
+
+.precio-rango {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.precio-rango input {
+  width: 45%;
+  text-align: center;
+}
+
+
+.lista-estilos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-estilos li {
+  margin-bottom: 10px;
+}
+
+.lista-estilos li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.lista-estilos li a:hover {
+  color: #a7a589;
+}
+
+
+.contenido-principal {
+  flex: 1;
+}
+
+.encabezado-seccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.encabezado-seccion h2 {
+  font-size: 1.8em;
+  color: #111;
+}
+
+.ordenar {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.boton-comprar {
+  margin-top: 10px;
+  background-color: #a7a589;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton-comprar:hover {
+  background-color: #8c8a6f;
+}
 
 body {
     font-family: 'Playfair Display', serif;
@@ -140,7 +273,7 @@ body {
 .barra-lateral h3,
 .barra-lateral h4 {
     margin-bottom: 15px;
-    color: #cc0000;
+    color: #a19f7f;
     font-size: 1.2em;
 }
 
@@ -166,7 +299,7 @@ body {
 }
 
 .lista-estilos li a:hover {
-    color: #cc0000;
+    color: #a7a589;
 }
 
 .contenido-principal {
@@ -204,7 +337,7 @@ body {
 }
 
 .tarjeta-producto {
-    background: #ffffff;
+    background: #eeeae6;
     padding: 18px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -231,10 +364,11 @@ body {
 }
 
 .precio {
-    color: #cc0000;
+    color: #000000;
     font-weight: bold;
     font-size: 1.1em;
 }
+
 
 
 
