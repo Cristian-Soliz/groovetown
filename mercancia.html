@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Vinilos | Groove Town</title>
+  <title>Mercancía | Groove Town</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
     <h1>Groove Town</h1>
   </div>
   <div class="buscador">
-    <input type="text" placeholder="Buscar discos, artistas o géneros...">
+    <input type="text" placeholder="Buscar productos...">
     <button class="botonbuscar"><img src="imagenes/lupa.png" alt="Buscar" class="search-icon"></button>
   </div>
 </header>
@@ -24,8 +24,8 @@
     <li><a href="index.html">Inicio</a></li>
     <li><a href="lanzamientos.html">Lanzamientos</a></li>
     <li><a href="cd.html">CD</a></li>
-    <li><a href="vinilos.html" class="activo">Vinilos</a></li>
-    <li><a href="mercancia.html">Mercancía</a></li>
+    <li><a href="vinilos.html">Vinilos</a></li>
+    <li><a href="mercancia.html" class="activo">Mercancía</a></li>
     <li><a href="posters.html">Posters</a></li>
   </ul>
 </nav>
@@ -38,7 +38,7 @@
     <div class="filtro">
       <label for="busqueda">Buscar</label>
       <div class="busqueda">
-        <input type="text" id="busqueda" placeholder="Buscar artistas...">
+        <input type="text" id="busqueda" placeholder="Buscar productos...">
         <button class="botonbuscar"><img src="imagenes/lupa.png" alt="Buscar" class="search-icon"></button>
       </div>
     </div>
@@ -46,26 +46,25 @@
     <div class="filtro">
       <label>Precio (Bs)</label>
       <div class="precio-rango">
-        <input type="number" id="min-precio" placeholder="Mín" min="120">
+        <input type="number" id="min-precio" placeholder="Mín" min="100">
         <span>-</span>
-        <input type="number" id="max-precio" placeholder="Máx" min="120">
+        <input type="number" id="max-precio" placeholder="Máx" min="100">
       </div>
     </div>
 
     <div class="filtro">
-      <h4>Estilos</h4>
+      <h4>Tipo</h4>
       <ul class="lista-estilos">
-        <li><a href="#">Rock</a></li>
-        <li><a href="#">Jazz</a></li>
-        <li><a href="#">Electrónica</a></li>
-        <li><a href="#">Hip-Hop</a></li>
+        <li><a href="#">Camisetas</a></li>
+        <li><a href="#">Sudaderas</a></li>
+        <li><a href="#">Gorras</a></li>
       </ul>
     </div>
   </aside>
 
   <main class="contenido-principal">
     <div class="encabezado-seccion">
-      <h2>Vinilos disponibles</h2>
+      <h2>Ropa de bandas</h2>
       <select class="ordenar">
         <option value="nuevo">Nuevos productos primero</option>
         <option value="precio">Precio más bajo</option>
@@ -74,56 +73,42 @@
 
     <div class="productos">
       <div class="tarjeta-producto">
-        <img src="imagenes/albums/appetitefordestruction.png" alt="Appetite for Destruction">
-        <h3>Appetite for Destruction</h3>
-        <p class="artista">Guns N' Roses</p>
-        <p class="fecha">Lanzado: Julio 21, 1987</p>
-        <p class="precio">0 Bs</p>
+        <img src="imagenes/mercancia/camiseta_metallica.png" alt="Camiseta Metallica">
+        <h3>Camiseta Metallica</h3>
+        <p class="artista">Metallica</p>
+        <p class="precio">150 Bs</p>
         <button class="boton-comprar">Comprar</button>
       </div>
 
       <div class="tarjeta-producto">
-        <img src="imagenes/albums/Nevermind.png" alt="Nevermind">
-        <h3>Nevermind</h3>
+        <img src="imagenes/mercancia/sudadera_nirvana.png" alt="Sudadera Nirvana">
+        <h3>Sudadera Nirvana</h3>
         <p class="artista">Nirvana</p>
-        <p class="fecha">Lanzado: Septiembre 24, 1991</p>
-        <p class="precio">0 Bs</p>
+        <p class="precio">200 Bs</p>
         <button class="boton-comprar">Comprar</button>
       </div>
 
       <div class="tarjeta-producto">
-        <img src="imagenes/albums/TheWall.png" alt="The Wall">
-        <h3>The Wall</h3>
-        <p class="artista">Pink Floyd</p>
-        <p class="fecha">Lanzado: Noviembre 30, 1979</p>
-        <p class="precio">0 Bs</p>
-        <button class="boton-comprar">Comprar</button>
-      </div>
-
-      <div class="tarjeta-producto">
-        <img src="imagenes/albums/Hotel California.png" alt="Hotel California">
-        <h3>Hotel California</h3>
-        <p class="artista">Eagles</p>
-        <p class="fecha">Lanzado: Diciembre 8, 1976</p>
-        <p class="precio">0 Bs</p>
-        <button class="boton-comprar">Comprar</button>
-      </div>
-
-      <div class="tarjeta-producto">
-        <img src="imagenes/albums/Back in Black.png" alt="Back in Black">
-        <h3>Back in Black</h3>
+        <img src="imagenes/mercancia/gorra_acdc.png" alt="Gorra AC/DC">
+        <h3>Gorra AC/DC</h3>
         <p class="artista">AC/DC</p>
-        <p class="fecha">Lanzado: Julio 25, 1980</p>
-        <p class="precio">0 Bs</p>
+        <p class="precio">120 Bs</p>
         <button class="boton-comprar">Comprar</button>
       </div>
 
       <div class="tarjeta-producto">
-        <img src="imagenes/albums/Rumours.png" alt="Rumours">
-        <h3>Rumours</h3>
-        <p class="artista">Fleetwood Mac</p>
-        <p class="fecha">Lanzado: Febrero 4, 1977</p>
-        <p class="precio">0 Bs</p>
+        <img src="imagenes/mercancia/camiseta_queen.png" alt="Camiseta Queen">
+        <h3>Camiseta Queen</h3>
+        <p class="artista">Queen</p>
+        <p class="precio">130 Bs</p>
+        <button class="boton-comprar">Comprar</button>
+      </div>
+
+      <div class="tarjeta-producto">
+        <img src="imagenes/mercancia/sudadera_pinkfloyd.png" alt="Sudadera Pink Floyd">
+        <h3>Sudadera Pink Floyd</h3>
+        <p class="artista">Pink Floyd</p>
+        <p class="precio">180 Bs</p>
         <button class="boton-comprar">Comprar</button>
       </div>
     </div>
