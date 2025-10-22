@@ -1,4 +1,4 @@
-/* ===================== GENERAL ===================== */
+
 body {
     margin: 0;
     font-family: 'Playfair Display', serif;
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-/* ===================== HEADER ===================== */
+
 .encabezado1 {
     display: flex;
     justify-content: space-between;
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.2s;
 }
 
-/* ===================== NAV MENU ===================== */
+
 .menu {
     background-color: #222;
 }
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #a7a589;
 }
 
-/* ===================== BIENVENIDA (INDEX) ===================== */
+
 .bienvenida {
     text-align: center;
     padding: 80px 20px;
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #555;
 }
 
-/* ===================== CONTENEDOR PRINCIPAL ===================== */
+
 .contenedor-principal {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
 }
 
-/* ===================== BARRA LATERAL ===================== */
+
 .barra-lateral {
     background-color: #fff;
     padding: 25px;
@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #a7a589;
 }
 
-/* ===================== CONTENIDO PRINCIPAL ===================== */
+
 .contenido-principal {
     flex: 1;
 }
@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #ccc;
 }
 
-/* ===================== TARJETAS DE PRODUCTO ===================== */
+/*productos*/
 .productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #8c8a6f;
 }
 
-/* ===================== CARRITO DE COMPRAS ===================== */
+/*compras*/
 #carrito {
     font-family: 'Poppins', sans-serif;
 }
@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #c0392b;
 }
 
-/* ===================== NOTICIAS (INDEX) ===================== */
+
 .noticias {
     padding: 20px 0;
 }
@@ -351,4 +351,60 @@ h1, h2, h3, h4, h5, h6 {
 .noticias ul li a:hover {
     color: #a7a589;
     text-decoration: underline;
+}
+/*carrito*/
+.carrito-boton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.carrito-boton button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.carrito-boton img {
+    width: 50px;   
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #a7a589;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.carrito-boton img:hover {
+    background-color: #8c8a6f;
+    transform: scale(1.1);
+}
+
+#carrito {
+  display: none; 
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 260px;
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+#carrito.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }

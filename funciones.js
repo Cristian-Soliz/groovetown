@@ -1,4 +1,4 @@
-// ---------------- FILTRO DE PRODUCTOS ----------------
+
 const btnBuscar = document.querySelector('.barra-lateral .botonbuscar');
 const inputBusqueda = document.querySelector('.barra-lateral #busqueda');
 const inputMinPrecio = document.querySelector('#min-precio');
@@ -26,7 +26,7 @@ function filtrarProductos() {
   });
 }
 
-// ---------------- ORDENAR PRODUCTOS ----------------
+
 function ordenarProductos() {
   if (!ordenarSelect) return;
 
@@ -49,14 +49,14 @@ function ordenarProductos() {
   tarjetasVisibles.forEach(tarjeta => productosContainer.appendChild(tarjeta));
 }
 
-// ---------------- FILTRO + ORDEN ----------------
+
 if (btnBuscar) btnBuscar.addEventListener('click', () => { filtrarProductos(); ordenarProductos(); });
 if (inputBusqueda) inputBusqueda.addEventListener('keyup', () => { filtrarProductos(); ordenarProductos(); });
 if (inputMinPrecio) inputMinPrecio.addEventListener('change', () => { filtrarProductos(); ordenarProductos(); });
 if (inputMaxPrecio) inputMaxPrecio.addEventListener('change', () => { filtrarProductos(); ordenarProductos(); });
 if (ordenarSelect) ordenarSelect.addEventListener('change', ordenarProductos);
 
-// ---------------- CARRITO DE COMPRAS ----------------
+
 let carrito = [];
 
 function actualizarCarrito() {
@@ -99,7 +99,7 @@ function actualizarCarrito() {
 
   carritoHTML.innerHTML += `<hr><p><strong>Total: ${total} Bs</strong></p>`;
 
-  // Quitar items
+ 
   carritoHTML.querySelectorAll('.quitar').forEach(btn => {
     btn.addEventListener('click', () => {
       const idx = parseInt(btn.dataset.index);
@@ -114,7 +114,7 @@ function agregarAlCarrito(nombre, artista, precio) {
   actualizarCarrito();
 }
 
-// ---------------- BOTONES COMPRAR ----------------
+
 tarjetas.forEach(tarjeta => {
   const btn = tarjeta.querySelector('.boton-comprar');
   if (btn) {
@@ -127,6 +127,18 @@ tarjetas.forEach(tarjeta => {
   }
 });
 
-// Inicializar carrito
+
+
+const botonCarrito = document.getElementById('abrirCarrito');
+if (botonCarrito) {
+  botonCarrito.addEventListener('click', () => {
+    const carrito = document.getElementById('carrito');
+    if (carrito) {
+      carrito.classList.toggle('visible');
+    }
+  });
+}
+
+
 actualizarCarrito();
 
